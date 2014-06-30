@@ -4,6 +4,7 @@ package com.teksystems.test.trafficflow;
 
 import com.teksystems.test.trafficflow.TrafficFlow.Builder;
 import com.teksystems.test.trafficflow.impl.DefaultTrafficFlowValidator;
+import com.teksystems.test.trafficflow.impl.FixedTrafficeLightsDistances;
 
 
 /**
@@ -18,7 +19,7 @@ public class TrafficFlowFactory {
 	/**
 	 * 
 	 */
-	private TrafficLightsDistances distances = TrafficLightsDistances.DEFAULT;
+	private TrafficLightsDistances distances = FixedTrafficeLightsDistances.DEFAULT;
 	
 	/**
 	 * 
@@ -96,9 +97,6 @@ public class TrafficFlowFactory {
 			throw new IllegalStateException("The buildClass" + builderClass + " cannot be instantiated!");
 		} 
 	}
-	
-	
-	
 	
 
 }

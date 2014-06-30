@@ -12,6 +12,7 @@
 	
 	<modules>
 		<module>TrafficFlow</module>
+		<module>SalesTaxes</module>
 	</modules>
 
 	<repositories>
