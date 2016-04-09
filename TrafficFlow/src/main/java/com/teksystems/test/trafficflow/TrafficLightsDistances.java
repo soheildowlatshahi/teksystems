@@ -21,29 +21,6 @@ public interface TrafficLightsDistances {
 	double getTargetDistance();
 	
 		
-	/**
-	 * 
-	 */
-	TrafficLightsDistances DEFAULT =  new TrafficLightsDistances() {
-		
-		/**
-		 * 
-		 */
-		private static final double DEFAULT_LIGHTS_DISTANCE = 150.0D;
-				
-		/**
-		 * 
-		 */
-		public double getNextLightDistance(int lightIndex) {
-			return DEFAULT_LIGHTS_DISTANCE;
-		};
-		
-		/**
-		 * 
-		 */
-		public double getTargetDistance() {
-			return DEFAULT_LIGHTS_DISTANCE;
-		};
-	};
+	
 
 }
